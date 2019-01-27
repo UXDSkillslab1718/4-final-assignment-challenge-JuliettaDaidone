@@ -1,0 +1,226 @@
+/* Color Palette
+#c4d7f2 - light blue 
+#EDF2F4 - White
+#797a9e - lavender
+#534b62 - Dark Lavender
+#A499B3 - light Lavender
+----------------------------*/
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+h1, h2 {
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+}
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  color: #c4d7f2;
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 90px 50px;
+  overflow: hidden;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.btn {
+  text-decoration: underline;
+  background: #A499B3;
+  color: #c4d7f2;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10%;
+  position: relative;
+}
+
+
+/* Header and Footer
+-------------------------*/
+header, footer {
+  background: linear-gradient(rgba(164, 153, 179, 0.8), 
+    rgba(164, 153, 179, 0.5)),
+    url(../images/back.png) no-repeat fixed;
+    background-size: cover; 
+}
+
+/* header */
+header {
+  padding: 50px;
+  position: relative;
+}
+
+header h1, header h2 {
+  color: #c4d7f2;
+  margin: 0;
+}
+.profile-img {
+  border-radius: 50%;
+}
+
+/* download button 
+----------------------*/
+
+.download {
+  position: absolute;
+  bottom: 0;
+  right:0;
+}
+
+
+/* footer 
+------------------------*/
+
+footer {
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Navigation
+-------------------------*/
+
+nav {
+  text-align: center;
+  background: #534b62;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+/* Work Experience
+-------------------------*/
+.work {
+  background: (237, 242, 244, 20);
+}
+
+h3 ~ p{
+  margin: 0;
+  clear: both;
+}
+
+.job-description{
+  margin-bottom: 25px;
+}
+
+.job-description p:first-of-type{
+  margin-top: 0;
+}
+
+/* Education
+-------------------------*/
+.education {
+  background: linear-gradient(rgba(164, 153, 179, 0.8), 
+    rgba(164, 153, 179, 0.5)),
+    url(../images/mountains.jpeg) no-repeat fixed;
+    background-size: cover; 
+}
+
+
+p + h3 {
+  margin-top: 30px;
+}
+
+
+/* Media Queries
+-------------------------*/
+
+@media (min-width: 900px) {
+  .col-narrow {
+  width: 30%;
+  float: left;
+}
+}
+
+@media (min-width: 1000px) {
+.col-img {
+  width: 70%;
+  float: left;
+}
+}
+
+@media (min-width: 1000px) {
+.col-wide {
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+  min-height: 300px
+}
+}
+
+@media (max-width: 899px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Project pictures
+-------------------------*/
+.projects {
+  background: linear-gradient(rgba(164, 153, 179, 0.8), 
+    rgba(164, 153, 179, 0.5)),
+    url(../images/THAUS.png) no-repeat fixed;
+    background-size: cover; 
+}
+
+.project {
+  border-radius: 10%;
+}
+
+/* Showcase pictures
+-------------------------*/
+
+.showcase {
+  background: linear-gradient(rgba(164, 153, 179, 0.8), 
+    rgba(164, 153, 179, 0.5)),
+    url(../images/setup.png) no-repeat fixed;
+    background-size: cover;
